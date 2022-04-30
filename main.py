@@ -28,7 +28,8 @@ def main():
     last_time = time.time()
     pyautogui.click(100,150)     
     i = 0     
-    while True:                
+    while True:        
+        PressKey(W)
         screen =  np.array(ImageGrab.grab(bbox=(0,60,800,600)))
         #print('Frame took {} seconds'.format(time.time()-last_time))
         winname = "juego"
